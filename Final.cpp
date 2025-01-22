@@ -4,52 +4,74 @@ using namespace std;
 int main()
 {
 
-	//L1F24BSCS0132 {SOHAIB}
 	//L1F24BSCS0135 {Adil}
-	//L1F24BSCS0205 {FAHAD}
-	//L1F24BSCS0223 {SAAD}
+	//L1F24BSCS0132 {Sohaib}
+	//L1F24BSCS0205 {Fahad}
+	//L1F24BSCS0223 {Saad}
 
-	/*
-	 Maam mera code Chat GPT se copied nahi hai !
-	*/
-
-	
-	//Declaring and Initialization of Name Array 
-	char name001[30] = {'\0'};
-	char name002[30] = {'\0'};
-	char name003[30] = {'\0'};
-	char name004[30] = {'\0'};
-	char name005[30] = {'\0'};
-	//Declaring and Initialization of Roll Number Array 
-	char roll001[20] = {'\0'};
-	char roll002[20] = {'\0'};
-	char roll003[20] = {'\0'};
-	char roll004[20] = {'\0'};
-	char roll005[20] = {'\0'};
+	//Maam mera code Chat GPT se copied nahi hai !
 
 
 
 	int choice = 0;
-	cout << "1.  Enter Student Record" << endl;
-	cout << "2.  Display All Records" << endl;
-	cout << "3.  Update All Course Marks" << endl;
-	cout << "4.  Update Individual Course Marks" << endl;
-	cout << "5.  Update Roll Number" << endl;
-	cout << "6.  Delete Student Marks" << endl;
-	cout << "7.  Sort Records (by roll number)" << endl;
-	cout << "8.  Search Student Record (by roll number)" << endl;
-	cout << "9.  Calculate Grade For All Students" << endl;
-	cout << "10. Exit" << endl;
 
-	switch (choice)
+
+
+	cout << "Welcome to the PSL Management System" << endl;
+
+	while (true)   // Loop to run the code until the user don't want to exit the Program . 
 	{
-	case 1:
 
-		cout << "Enter Student Name: ";
-		cin >> name ;
+		cout << "1. View Teams and Home Grounds " << endl;
+		cout << "2. Draft Players for Teams " << endl;
+		cout << "3. View Match Schedule " << endl;
+		cout << "4. Enter Match Results " << endl;
+		cout << "5. Display Points Table " << endl;
+		cout << "6. Search for Teams or Players " << endl;
+		cout << "7. Exit " << endl;
+
+		cout << "Enter Your Choice Number : ";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case1:
+
+			break;
+
+		case2:
+
+			break;
+
+		case3:
+
+			break;
+		
+		case4:
+
+			break;
+		
+		case5:
+
+			break;
+		
+		case6:
+
+			break;
+		
+		case7:
+			cout << "Thank You For Using PSL Management System." << endl; 
+			cout << "Exiting the Program !" << endl;
+
+			exit(0);  // To exit the Program .
+
+		default:
+			cout << "Enter valid choice ! " << endl;
+			break;
+		}
+
+
 	}
-	
-
 
 
 
