@@ -13,7 +13,22 @@ int main()
 
 
 
-	int choice = 0;
+	char choice = '\0';
+	//arrays for storing team names
+	const int teams = 6;
+	const int teamsize = 50;
+	char teamname[teams][teamsize] = {"Lahore Qalanders", "Karachi Kings","Peshawar Zalmi",
+									"Quetta Gladiators","Islamabad United","Multan Sultans" };
+	//arrays for storing home city
+	const int cities = 6;
+	const int citysize = 50;
+	char cityname[cities][citysize] = { "Lahore","Karachi","Peshawar","Quetta","Islamabad","Multan" };
+	//arrays for storing home grounds;
+	const int grounds = 6;
+	const int groundsize = 50;
+	char groundname[grounds][groundsize] = { "Gaddafi Stadium","National Stadium","Arbab Niaz Stadium",
+											"Bugti Stadium","Rawalpindi Cricket Stadium","Multan Cricket Stadium" };
+
 
 
 
@@ -35,35 +50,47 @@ int main()
 
 		switch (choice)
 		{
-		case1:
+		case'1':
+			cout << "\nPSL Team Details: " << endl;
+			cout << "-------------------------------------------------" << endl;
+			cout << "| Team Name\t\t\t| Home City\t\t\t| Home Ground" << endl;
+			for (int i = 0; i < teams; i++)
+			{
+				cout << "| " << teamname[i]   << "\t\t\t";
+				cout << "| " << cityname[i]   << "\t\t\t";
+				cout << "| " << groundname[i] << "\t\t\t";
+				cout << endl;
+			}
+			cout << "-------------------------------------------------" << endl;
 
 			break;
 
-		case2:
+		case'2':
 
 			break;
 
-		case3:
+		case'3':
 
 			break;
-		
-		case4:
+
+		case'4':
 
 			break;
-		
-		case5:
+
+		case'5':
 
 			break;
-		
-		case6:
+
+		case'6':
 
 			break;
-		
-		case7:
-			cout << "Thank You For Using PSL Management System." << endl; 
+
+		case'7':
+			cout << "Thank You For Using PSL Management System." << endl;
 			cout << "Exiting the Program !" << endl;
 
 			exit(0);  // To exit the Program .
+			break;
 
 		default:
 			cout << "Enter valid choice ! " << endl;
