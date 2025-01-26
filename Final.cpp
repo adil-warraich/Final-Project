@@ -11,9 +11,8 @@ int main()
 
 	//Maam mera code Chat GPT se copied nahi hai !
 
-
-
 	char choice = '\0';
+	//for case 1
 	//arrays for storing team names
 	const int teams = 6;
 	const int teamsize = 50;
@@ -28,7 +27,9 @@ int main()
 	const int groundsize = 50;
 	char groundname[grounds][groundsize] = { "Gaddafi Stadium","National Stadium","Arbab Niaz Stadium",
 											"Bugti Stadium","Rawalpindi Cricket Stadium","Multan Cricket Stadium" };
-
+	// for case 3
+	int groundi = 0;
+	int no = 1;
 
 
 
@@ -52,7 +53,7 @@ int main()
 		{
 		case'1':
 			cout << "\nPSL Team Details: " << endl;
-			cout << "-------------------------------------------------" << endl;
+			cout << "--------------------------------------------------------------------------------------------------------------" << endl;
 			cout << "| Team Name\t\t\t| Home City\t\t\t| Home Ground" << endl;
 			for (int i = 0; i < teams; i++)
 			{
@@ -61,7 +62,7 @@ int main()
 				cout << "| " << groundname[i] << "\t\t\t";
 				cout << endl;
 			}
-			cout << "-------------------------------------------------" << endl;
+			cout << "--------------------------------------------------------------------------------------------------------------" << endl;
 
 			break;
 
@@ -70,7 +71,17 @@ int main()
 			break;
 
 		case'3':
-
+			cout << endl;
+			for (int i = 0; i < teams; i++)
+			{
+				for (int j = i+1; j < teams; j++)
+				{
+					cout << no << ". " << teamname[i] << " VS " << teamname[j] << " at " << groundname[groundi] << endl;
+					groundi = (groundi + 1) % grounds;		//to alternate grounds
+					no++;
+				}
+			}
+			cout << endl;
 			break;
 
 		case'4':
